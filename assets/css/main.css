@@ -1104,17 +1104,19 @@ input, select, textarea {
 		line-height: calc(2.75rem - 2px);
 	}
 
-/* ---- particles.js container ---- */
 
-/* #particles-js {
+/* Particles.js Container */
+
+#particles-js {
+	position: fixed; 
 	width: 100%;
 	height: 100%;
-	background-color: #ffffff;
-	background-image: url('');
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-  } */
+	top: 0;
+	left: 0;
+	z-index: -1; 
+	pointer-events: none; 
+  }
+  
   
 /* BG */
 
@@ -1302,6 +1304,12 @@ input, select, textarea {
 				display: none;
 			}
 
+		/* Logo Icon */
+		.logo-icon {
+			margin-right: 0.5em;
+			vertical-align: middle;
+		}
+		
 		#header .logo {
 			width: 5.5rem;
 			height: 5.5rem;
@@ -1671,4 +1679,3 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-
